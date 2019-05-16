@@ -24,5 +24,5 @@ SEPARATOR = ' | '
 
 def generate_table(*args):
 	for line in zip(*args):
-		yield SEPARATOR.join(list(line))
+		yield SEPARATOR.join(map(str,list(line)))
 
