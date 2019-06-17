@@ -1,2 +1,4 @@
 # Ignore MacOS config files
 .DS_STORE
+.vscode
+.pytest_cache
