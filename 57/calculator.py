@@ -7,11 +7,15 @@ def calculator(operation, numbers):
     """TODO 1:
        Create a calculator that takes an operation and list of numbers.
        Perform the operation returning the result rounded to 2 decimals"""
-    if operation == "div":
-        operation = "truediv"
+    operations = {
+        "add": operator.add,
+        "sub": operator.sub,
+        "mul": operator.mul,
+        "div": operator.truediv,
+    }
     numbers = [float(num) for num in numbers]
-    stmt = f"functools.reduce(operator.{operation}, {numbers})"
-    return round(eval(stmt), 2)
+
+    return round(functools.reduce(operations[operation], numbers), 2)
 
 
 def create_parser():
