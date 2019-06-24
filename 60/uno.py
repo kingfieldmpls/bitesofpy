@@ -1,5 +1,4 @@
 from collections import namedtuple
-import pdb
 
 SUITS = "Red Green Yellow Blue".split()
 
