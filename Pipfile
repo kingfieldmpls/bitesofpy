@@ -12,6 +12,7 @@ pytest = "*"
 black = "*"
 beautifulsoup4 = "*"
 requests = "*"
+pytz = "*"
 
 [requires]
 python_version = "3.7"
