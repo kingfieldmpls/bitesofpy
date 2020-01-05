@@ -20,7 +20,7 @@ def float_series() -> pd.Series:
     """
     r = numpy.arange(0.000, 1.001, 0.001)
     l = ["{0:.3f}".format(num) for num in r]
-    return pd.Series(l)
+    return pd.Series(l).astype(numpy.float64)
 
 
 def alpha_index_series() -> pd.Series:

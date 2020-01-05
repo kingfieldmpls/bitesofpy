@@ -13,6 +13,8 @@ black = "*"
 beautifulsoup4 = "*"
 requests = "*"
 pytz = "*"
+pandas = "*"
+regex = "*"
 
 [requires]
 python_version = "3.7"
